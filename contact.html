@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Golden Elephant Thai Restaurant - Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="contact-style.css">
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+  var form = document.querySelector("form");
+  if (!form.checkValidity()) {
+    event.preventDefault();
+    alert("Please fill out all fields before submitting the form.");
+  }
+});
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    <h1>Golden Elephant Thai Restaurant</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <section id="location-contact-us">
+    <div id="location-social-media">
+        <div id="location">
+            <h2>Location</h2>
+            <p>12 Soi Baromrachachonnani 4 Boromratchonnani Road, Bangbumru, Bang Phlat, Bangkok, 10700</p>
+            <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=12%20Soi%20Borommaratchachonnani%204,%20Borommaratchachonnani%20Rd.+(Golden%20Elephant%20Thai%20Restaurant%20)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">area maps</a></iframe></div>
+        </div>
+        <div id="social-media">
+            <h2>Our Social Media</h2>
+            <div class="social-media-link">
+                <img src="facebook-logo.png" alt="Facebook Logo" class="logo">
+                <a href="#">Facebook</a>
+            </div>
+            <div class="social-media-link">
+                <img src="instagram-logo.png" alt="Instagram Logo" class="logo">
+                <a href="#">Instagram</a>
+            </div>
+            <div class="social-media-link">
+                <img src="twitter-logo.png" alt="Twitter Logo" class="logo">
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div id="contact-us">
+      <h2>Contact Us</h2>
+      <p>Phone: 02-555-5555</p>
+      <p>Email: golden.elephant.thai.restaurant@email.com</p>
+      <form>
+        <div id="name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div id="email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>        
+        <div id="message">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="10" required></textarea>          
+        </div>
+        <input type="submit" value="Send">
+      </form>      
+    </div>
+</section>
+
+  <footer>
+    <p>Copyright ©2023 Golden Elephant Thai Restaurant</p>
+  </footer>
+</body>
+</html>
